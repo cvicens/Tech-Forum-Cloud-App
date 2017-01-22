@@ -9,13 +9,13 @@ module.exports = function(grunt) {
       js: {
         files: ['gruntfile.js', 'application.js', 'lib/**/*.js', 'test/**/*.js'],
         options: {
-          livereload: true
+          livereload: 35730
         }
       },
       html: {
         files: ['public/views/**', 'app/views/**'],
         options: {
-          livereload: true
+          livereload: 35730
         }
       }
     },
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
            * or a remote instance.
            */
           var serviceMap = {
-            'SERVICE_GUID_1': 'http://127.0.0.1:8010',
+            'hlcvqjpcf6raquhojqbbqnlp': 'http://127.0.0.1:8001',
             'SERVICE_GUID_2': 'https://host-and-path-to-service'
           };
           return JSON.stringify(serviceMap);
