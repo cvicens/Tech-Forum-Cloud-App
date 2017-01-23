@@ -40,6 +40,9 @@ app.post('/box/srv/1.1/admin/authpolicy/auth', function(req, res) {
 // Important that this is last!
 app.use(mbaasExpress.errorHandler());
 
+// Register Form Submission listener
+require('./lib/submissionEventListener');
+
 var port = process.env.FH_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8101;
 var host = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 app.listen(port, host, function() {
